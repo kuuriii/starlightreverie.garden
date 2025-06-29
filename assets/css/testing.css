@@ -1,0 +1,59 @@
+
+
+body{
+background-image: url('traversebg2.png');
+background-size: cover;
+position: relative;
+margin: auto;
+font-family:Ms Ui Gothic;
+font-size: 15px;
+cursor: url('cursor.png'), auto;
+}
+
+tr {
+vertical-align: top;
+}
+
+ .putstuffhere{
+background-color: #b86756;
+background-image: url('roxassora.png');
+background-repeat: no-repeat;
+border: 15px ridge #632416;
+outline: 2px ridge #632416;
+border-image: url('lights.png') 15 fill round;
+overflow-y: auto;
+overflow-x: hidden;
+margin: 3px;
+position: relative;
+height: 280px;
+}
+
+.sillytitles{
+background-image: url('wood.png');
+padding: 3px;
+color: #ffffff;
+border: solid 5px black; 
+border-image: url('lightborder.png') 5 round;
+outline: 2px ridge #632416;
+margin: 2px;
+}
+
+a {
+text-decoration: underline;
+color: #ff8f17;
+text-shadow: 1px 1px #472500;
+}
+
+a:hover {
+cursor: url('cursor.png'), auto;
+}
+
+#statuscafe {
+padding: .5em;
+font-size: 12px;
+}
+
+#statuscafe-username {
+font-weight: bold;
+}
+

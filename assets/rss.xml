@@ -1,0 +1,31 @@
+<rss version="2.0">
+    <channel>
+        <title>Uri's RSS feed!!</title>
+        <description>An RSS version of my blog!</description>
+        <link>https://kuuriii.nekoweb.org</link>
+        <item>
+            <title>Feb. 13 2025</title>
+            <description>Happy New Year!</description>
+            <link>https://kuuriii.nekoweb.org/blog/2025/2-13-new-year.html</link>
+            <guid>post-1</guid>
+            <pubDate>Thu 13 Feb 2025, 09:45:00 -0700</pubDate>
+            <!--style>
+                .post-box .post-title {
+                    color: red;
+                }
+            </style-->
+        </item>
+                <item>
+            <title>Major Overhaul Incoming!!!</title>
+            <description>Stay tuned for kuuriii's café v2!!!</description>
+            <link>https://kuuriii.nekoweb.org/blog/2025/5-2-overhaul.html</link>
+            <guid>post-2</guid>
+            <pubDate>Fri 2 May 2025, 22:54:20 -0700</pubDate>
+            <!--style>
+                .post-box .post-title {
+                    color: red;
+                }
+            </style-->
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,60 @@
+.post .recent-post {
+	border: 1px dashed black;
+}
+
+#statuscafe {
+	padding: 0.5em;
+	background-color: #f8dae9;
+	border: 1px solid #efbce7;
+}
+#statuscafe-username {
+	margin-bottom: 0.5em;
+}
+#statuscafe-content {
+	margin: 0 1em 0.5em 1em;
+}
+.webring {
+	position: relative;
+	text-align: center;
+}
+
+.navig {
+	text-decoration: none;
+	color: var(--clr);
+}
+.nm {
+	color: var(--clr);
+	text-decoration: none;
+}
+
+#bucketwebring {
+	border-top: 20px;
+	--clr: #ccafe9;
+}
+#bucketwebring .nm {
+	color: transparent !important;
+	background-clip: text;
+	background-image: linear-gradient(
+		to right,
+		#ffcaca 0,
+		#ffedc1 20%,
+		#feffb8 40%,
+		#c4ffcb 60%,
+		#add8ff 80%,
+		#ccafe9 100%
+	);
+	animation: 4s linear infinite bucketwebring;
+}
+
+#touhou-ring {
+	padding: 1rem;
+}
+
+@keyframes bucketwebring {
+	from {
+		background-position: 0;
+	}
+	to {
+		background-position: 130px;
+	}
+}

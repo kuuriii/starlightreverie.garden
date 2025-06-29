@@ -1,0 +1,349 @@
+/*-- _ ✧ *:･ﾟ✧ _ BASIC STUFF START _ ✧ *:･ﾟ✧ _ --*/
+
+html,
+* {
+  -webkit-font-smoothing: none;
+  font-smooth: never;
+  cursor: url(/pics/nepeta-v1/pikacursor.png), auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: jojoba;
+  src: url(/goodies/fonts/Jojoba.otf);
+}
+
+@font-face {
+  font-family: popjoy;
+  src: url(/goodies/fonts/FOT-PopJoyStd-B.otf);
+}
+
+body {
+  background-image: url(/pics/nepeta-v1/stars.png);
+  background-color: #210600;
+  font-family:
+    jojoba,
+    comic sans ms;
+  width: 800px;
+  margin-left: auto;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: auto;
+  color: #c46639;
+  overflow-x: hidden;
+
+  /* prevents text from adjusting on mobile devices (beat it, mobile compatibility) */
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: popjoy;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+meow {
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+  text-shadow:
+    -1px 0 #c46639,
+    0 1px #c46639,
+    1px 0 #c46639,
+    0 -1px #c46639;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 194, 212, 1) 0%,
+    rgba(255, 232, 116, 1) 50%,
+    rgba(196, 249, 255, 1) 100%
+  );
+  border-radius: 1em;
+  margin-right: 3px;
+}
+
+.hdr {
+  filter: drop-shadow(0px 2px #c46639) drop-shadow(0 -2px #c46639)
+    drop-shadow(2px 0 #c46639) drop-shadow(-2px 0 #c46639);
+}
+
+a {
+  color: #fda3b4;
+  cursor: url(/pics/nepeta-v1/pikapointer.png), auto;
+  text-decoration: none;
+}
+
+.squidparty,
+a {
+  text-shadow:
+    -1px 0 #c46639,
+    0 1px #c46639,
+    1px 0 #c46639,
+    0 -1px #c46639,
+    -1px 0 #c46639,
+    0 1px #c46639,
+    1px 0 #c46639,
+    0 -1px #c46639;
+}
+
+.squidparty,
+a:hover {
+  -webkit-animation: ikkan 5s linear infinite alternate;
+}
+
+@keyframes ikkan {
+  0% {
+    color: #fda3b4;
+  }
+  10% {
+    color: #ffc693;
+  }
+  20% {
+    color: #ffff7f;
+  }
+  30% {
+    color: #a0ffa0;
+  }
+  40% {
+    color: #a0ffdc;
+  }
+  50% {
+    color: #a6fcff;
+  }
+  60% {
+    color: #a8beff;
+  }
+  70% {
+    color: #d0beff;
+  }
+  80% {
+    color: #efbeff;
+  }
+  90% {
+    color: #ffbed9;
+  }
+  100% {
+    color: #fda3b4;
+  }
+}
+
+/*--- + selection + scrollbar + ---*/
+::selection {
+  color: white;
+  background-color: #fda3b4;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #fff;
+  background-image: url(https://i.imgur.com/Qtm9Z60.png);
+  border-top: 1px solid #bdbdbd;
+  border-left: 1px solid #bdbdbd;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  background-image: url(https://i.imgur.com/IGXGYKz.png);
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: url(https://i.imgur.com/WhC8iy3.png);
+  width: 14px;
+  height: 16px;
+  border-top: 1px solid #bdbdbd;
+  border-left: 1px solid #bdbdbd;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: url(https://i.imgur.com/fQ18mrR.png);
+  border-top: 1px solid #bdbdbd;
+  border-left: 1px solid #bdbdbd;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 14px;
+  height: 16px;
+}
+
+/*-- _ ✧ *:･ﾟ✧ _ BASIC STUFF END _ ✧ *:･ﾟ✧ _ --*/
+
+/*-- _ ✧ *:･ﾟ✧ _ LAYOUT STUFF START _ ✧ *:･ﾟ✧ _ --*/
+
+container {
+  display: block;
+}
+
+banner {
+  border: 5px solid #c46639;
+  background-color: #ffebd9;
+  background-image: url(/pics/nepeta-v1/banner.png);
+  image-rendering: pixelated;
+  display: block;
+  height: 125px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px 0px rgba(196, 102, 57, 0.3);
+}
+
+navi {
+  display: flex;
+}
+
+.btn {
+  text-align: center;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 16px;
+  font-family: popjoy;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 5px solid #c46639;
+  box-shadow: 5px 5px 0px 0px rgba(196, 102, 57, 0.3);
+  border-radius: 10px;
+  user-select: none;
+}
+
+.btn:hover {
+  cursor: url(/pics/nepeta-v1/pikapointer.png), auto;
+}
+
+.btn-pink,
+.btn-pink:focus,
+.btn-pink:active {
+  background: #ffa8b7;
+  border: 5px outset #ff8298;
+  color: #ff0084;
+  width: 100%;
+  margin-left: 0;
+}
+
+.btn-pink:hover {
+  background: #ff8298;
+  border: 5px inset #ff617d;
+  color: #c90068;
+}
+
+.btn-orange,
+.btn-orange:focus,
+.btn-orange:active {
+  background: #ffcea8;
+  border: 5px outset #ffb67d;
+  color: #ff5e00;
+  width: 100%;
+}
+
+.btn-orange:hover {
+  background: #ffb67d;
+  border: 5px inset #ff9b4d;
+  color: #c74900;
+}
+
+.btn-yellow,
+.btn-yellow:focus,
+.btn-yellow:active {
+  background: #fff1a8;
+  border: 5px outset #fff582;
+  color: #ff9a00;
+  width: 100%;
+}
+
+.btn-yellow:hover {
+  background: #fff582;
+  border: 5px inset #fff047;
+  color: #d68100;
+}
+
+.btn-green,
+.btn-green:focus,
+.btn-green:active {
+  background: #afffa8;
+  border: 5px outset #75ff69;
+  color: #1ee000;
+  width: 100%;
+}
+
+.btn-green:hover {
+  background: #75ff69;
+  border: 5px inset #46ff36;
+  color: #18b500;
+}
+
+.btn-blue,
+.btn-blue:focus,
+.btn-blue:active {
+  background: #a8fffc;
+  border: 5px outset #5efff9;
+  color: #3298ec;
+  width: 100%;
+}
+
+.btn-blue:hover {
+  background: #5efff9;
+  border: 5px inset #26ebe3;
+  color: #177dd1;
+}
+
+.btn-purple,
+.btn-purple:focus,
+.btn-purple:active {
+  background: #d3a8ff;
+  border: 5px outset #b56eff;
+  color: #8400ff;
+  width: 100%;
+}
+
+.btn-purple:hover {
+  background: #b56eff;
+  border: 5px inset #9f42ff;
+  color: #6800c9;
+}
+
+.btn-magenta,
+.btn-magenta:focus,
+.btn-magenta:active {
+  background: #ffa8e5;
+  border: 5px outset #ff6ec5;
+  color: #ff3bb0;
+  width: 100%;
+  margin-right: 0;
+}
+
+.btn-magenta:hover {
+  background: #ff6ec5;
+  border: 5px inset #ff47b6;
+  color: #ed289e;
+}
+
+main {
+  border: 5px solid #c46639;
+  background-color: #ffebd9;
+  margin-top: 16px;
+  image-rendering: pixelated;
+  display: block;
+  height: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 0px 0px rgba(196, 102, 57, 0.3);
+  position: relative;
+}
+
+/*-- _ ✧ *:･ﾟ✧ _ LAYOUT STUFF END _ ✧ *:･ﾟ✧ _ --*/
